@@ -1,0 +1,49 @@
+--------------------------------------------------------------------------------
+			  Welcome to cwushell!
+			created by Taylor Apple
+		      Central Washington University
+				1/12/2019
+--------------------------------------------------------------------------------
+
+In this program you are able to operate any of the standard shell commands
+(e.g. ls, cat, pw, rm, etc.) as you would in any other shell with the same
+parameters and help features. However, I have added 4 commands as part of this
+shell which are not standard and will require some explanation on how to use
+them.
+
+********************************************************************************
+For all commands you may replace the parameter or switch with -h and a help
+blurb will appear describing the function of the command.
+********************************************************************************
+
+They are:
+
+exit [n] - parameter n - Non-zero integer
+This command will terminate the shell with a code of 0 if no parameter is
+given. However, if a value is provided this is the status code which will be
+provided on termination.
+
+
+prompt <newPrompt> - parameter newPrompt - A string
+This command will change the prompt displayed when a new command is expected.
+If no parameter is provided it will be set to the default of 'cwushell>'.
+Otherwise, the 'newPrompt' will become the new prompt.
+
+
+cpuinfo -[c|t|n] - switch - values c or t or n
+This function will provide information about the CPU you are currently using.
+The switch is required for the command to work. 
+With a value of 'c' it will print the cpu clock.
+With a value of 't' it will print the cpu type.
+With a value of 'n' it will print the number of cores.
+
+
+meminfo -[t|u|c] - switch - values t or u or c
+This function will provide you information about the system memory being used.
+The switch is required for the command to work.
+With a value of 't' it will print the total RAM memory in in bytes.
+With a value of 'u' it will print the used RAM memory.
+With a value of 'c' it will print the size of the L2 cache/core in bytes.
+
+Don't forget, to view this file again just use the command 'manual'!
+Happy shelling!
